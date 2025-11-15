@@ -4,7 +4,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import os
 
 # Configuration
-RTSP_URL = "rtsp://localhost:8554/mystream"  # Change this to your RTSP stream URL
+RTSP_URL = "rtsp://192.168.0.13:8554/desktop"  # Change this to your RTSP stream URL
 MJPEG_PORT = 8080  # Port for the web server
 FRAME_RATE = 15  # Frames per second for MJPEG
 
