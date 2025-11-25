@@ -4,7 +4,7 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import os
 
 # Configuration
-RTSP_URL = "rtsp://localhost:8554/mystream"  # Change this to your RTSP stream URL
+RTSP_URL = "rtsp://192.168.0.16:8554/desktop"  # Change this to your RTSP stream URL
 MJPEG_PORT = 8080  # Port for the web server
 FRAME_RATE = 15  # Frames per second for MJPEG
 
@@ -226,7 +226,7 @@ class StreamHandler(BaseHTTPRequestHandler):
                 <script>
                     // Mock stream data (replace with actual streams later)
                     const streams = [
-                        { id: 1, name: "Stream 1", url: "rtsp://192.168.1.100:8554/stream1" },
+                        { id: 1, name: "Stream 1", url: "rtsp://192.168.0.15:8554/desktop" },
                         { id: 2, name: "Stream 2", url: "rtsp://192.168.1.100:8554/stream2" },
                         { id: 3, name: "Stream 3", url: "rtsp://192.168.1.100:8554/stream3" },
                         { id: 4, name: "Stream 4", url: "rtsp://192.168.1.100:8554/stream4" },
